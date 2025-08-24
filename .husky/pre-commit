@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "🔎 TypeScript typecheck..."
+npm run typecheck || exit 1
+
+echo "🧹 ESLint (sin warnings permitidos)..."
+npm run lint || exit 1
+
+echo "💅 Prettier format check..."
+npm run format:check || exit 1
