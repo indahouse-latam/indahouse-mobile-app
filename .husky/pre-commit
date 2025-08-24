@@ -3,7 +3,7 @@
 echo "🔎 TypeScript typecheck..."
 npm run typecheck || exit 1
 
-echo "🧹 ESLint (sin warnings permitidos)..."
+echo "🧹 ESLint (no warnings allowed)..."
 npm run lint || exit 1
 
 echo "💅 Prettier format check..."
