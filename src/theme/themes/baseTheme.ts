@@ -1,3 +1,5 @@
+import { DEVICE_HEIGHT, DEVICE_WIDTH } from '@/common';
+
 import { Font } from '../types/font';
 import { Theme } from '../types/theme';
 
@@ -21,5 +23,9 @@ export const baseTheme = {
       large: 20,
       full: 9999,
     },
+  },
+  space: {
+    height: (percent: number) => (percent / 100) * DEVICE_HEIGHT,
+    width: (percent: number) => (percent / 100) * DEVICE_WIDTH,
   },
 } satisfies Partial<Theme>;

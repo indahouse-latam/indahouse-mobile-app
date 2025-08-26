@@ -1,6 +1,9 @@
 import { createStylesBuilder } from '../utils/createStylesBuilder';
 
 export const buildGlobalStyles = createStylesBuilder(theme => ({
+  paddingHorizontal: {
+    paddingHorizontal: theme.space.width(5),
+  },
   card: {
     backgroundColor: theme.colors.background.secondary,
     borderRadius: theme.sizes.radius.medium,

@@ -5,6 +5,7 @@ export interface Theme {
   fonts: Fonts;
   colors: Colors;
   sizes: Sizes;
+  space: Space;
 }
 
 interface Fonts {
@@ -22,15 +23,27 @@ interface Colors {
   attention: Color;
 }
 
+interface Sizes {
+  text: TextSizes;
+  radius: RadiusSizes;
+}
+
+interface Space {
+  height: (percent: number) => number;
+  width: (percent: number) => number;
+}
+
+interface PrimaryFont {
+  regular: Font;
+  medium: Font;
+  semibold: Font;
+  bold: Font;
+}
+
 interface BackgroundColors {
   primary: Color;
   secondary: Color;
   success: Color;
-}
-
-interface Sizes {
-  text: TextSizes;
-  radius: RadiusSizes;
 }
 
 interface TextSizes {
@@ -43,11 +56,4 @@ interface RadiusSizes {
   medium: number;
   large: number;
   full: number;
-}
-
-interface PrimaryFont {
-  regular: Font;
-  medium: Font;
-  semibold: Font;
-  bold: Font;
 }

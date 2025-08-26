@@ -2,6 +2,7 @@ import { createStylesHook } from '@/theme';
 
 export const useStyles = createStylesHook(({ theme, globalStyles }) => ({
   container: {
+    ...globalStyles.paddingHorizontal,
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -9,10 +10,12 @@ export const useStyles = createStylesHook(({ theme, globalStyles }) => ({
   },
   card: {
     ...globalStyles.card,
-    padding: 25,
+    width: '100%',
+    paddingVertical: theme.space.height(3),
   },
   text: {
-    fontSize: theme.sizes.text.large,
     fontFamily: theme.fonts.primary.medium,
+    fontSize: theme.sizes.text.large,
+    textAlign: 'center',
   },
 }));
