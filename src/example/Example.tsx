@@ -1,26 +1,20 @@
 import React, { FC, memo } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+
+import { useStyles } from './useStyles';
 
 interface Props {
   text: string;
 }
 
 export const Example: FC<Props> = memo(({ text }) => {
+  const { styles } = useStyles();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{text}</Text>
+      <View style={styles.card}>
+        <Text style={styles.text}>{text}</Text>
+      </View>
     </View>
   );
-});
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
 });

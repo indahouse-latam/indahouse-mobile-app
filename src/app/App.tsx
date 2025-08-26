@@ -3,6 +3,7 @@ import { StatusBar, useColorScheme } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { Example } from '@/example';
+import { ThemeProvider } from '@/theme';
 
 import { text } from './text';
 
@@ -13,7 +14,9 @@ export const App: FC = () => {
     <SafeAreaProvider>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
 
-      <Example text={text} />
+      <ThemeProvider>
+        <Example text={text} />
+      </ThemeProvider>
     </SafeAreaProvider>
   );
 };
