@@ -14,7 +14,6 @@ export const useStyles = createStylesHook(({ theme, globalStyles }) => ({
     paddingVertical: theme.space.height(3),
   },
   text: {
-    fontFamily: theme.fonts.primary.medium,
     fontSize: theme.sizes.text.large,
     textAlign: 'center',
   },
