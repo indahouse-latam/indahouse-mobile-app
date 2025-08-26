@@ -12,6 +12,7 @@ interface Fonts {
 }
 
 interface Colors {
+  black: Color;
   primary: Color;
   secondary: Color;
   tertiary: Color;

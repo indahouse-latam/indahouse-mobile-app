@@ -6,6 +6,7 @@ import { baseTheme } from './baseTheme';
 export const lightTheme: Theme = {
   ...baseTheme,
   colors: {
+    black: Color.BLACK,
     primary: Color.BLUE,
     secondary: Color.DARK_BLUE,
     tertiary: Color.LIGHT_BLUE,
