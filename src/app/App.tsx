@@ -1,9 +1,11 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { FC } from 'react';
 import { StatusBar } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import { Example } from '@/example';
 import { ThemeProvider } from '@/theme';
+
+import { RootStackNavigation } from './rootStack/RootStack';
 
 export const App: FC = () => {
   return (
@@ -11,7 +13,9 @@ export const App: FC = () => {
       <StatusBar translucent backgroundColor={'transparent'} barStyle='dark-content' />
 
       <ThemeProvider>
-        <Example text='InDaHouse App' />
+        <NavigationContainer>
+          <RootStackNavigation />
+        </NavigationContainer>
       </ThemeProvider>
     </SafeAreaProvider>
   );

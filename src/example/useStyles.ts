@@ -13,6 +13,9 @@ export const useStyles = createStylesHook(({ theme, globalStyles }) => ({
     width: '100%',
     paddingVertical: theme.space.height(3),
   },
+  pressedCard: {
+    opacity: 0.7,
+  },
   text: {
     fontSize: theme.sizes.text.large,
     textAlign: 'center',
