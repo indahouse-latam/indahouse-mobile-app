@@ -16,6 +16,8 @@
 		C4FFB26502B14664A903EC8E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 869A8FEFDC314D4B9A6915F5 /* Montserrat-Medium.ttf */; };
 		D96C13A2359702BE85903B1C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		E2B3DA86934F4599A93A059C /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C1135D934F7386B037B6 /* Montserrat-SemiBold.ttf */; };
+		FECE4FEB129E4B9081FA1FE5 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4836D26CD0D64837ADF28158 /* BootSplash.storyboard */; };
+		43581EB32EC1442E836A0F7A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740B90F80F924D2EA76A89D6 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = InDaHouse/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		869A8FEFDC314D4B9A6915F5 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../src/common/assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		4836D26CD0D64837ADF28158 /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "InDaHouse/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		740B90F80F924D2EA76A89D6 /* Colors.xcassets */ = {isa = PBXFileReference; name = "Colors.xcassets"; path = "InDaHouse/Colors.xcassets"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = folder.assetcatalog; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				4836D26CD0D64837ADF28158 /* BootSplash.storyboard */,
+				740B90F80F924D2EA76A89D6 /* Colors.xcassets */,
 			);
 			name = InDaHouse;
 			sourceTree = "<group>";
@@ -185,6 +191,8 @@
 				C4FFB26502B14664A903EC8E /* Montserrat-Medium.ttf in Resources */,
 				3C1880168246419581E2E6D7 /* Montserrat-Regular.ttf in Resources */,
 				E2B3DA86934F4599A93A059C /* Montserrat-SemiBold.ttf in Resources */,
+				FECE4FEB129E4B9081FA1FE5 /* BootSplash.storyboard in Resources */,
+				43581EB32EC1442E836A0F7A /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
