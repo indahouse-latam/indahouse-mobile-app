@@ -13,11 +13,11 @@ interface Fonts {
 }
 
 interface Colors {
-  black: Color;
   primary: Color;
   secondary: Color;
   tertiary: Color;
   background: BackgroundColors;
+  shadow: Color;
   success: Color;
   error: Color;
   attention: Color;
