@@ -2,7 +2,8 @@ import React, { FC, useCallback } from 'react';
 
 import { RootStackScreen, RootStackScreenProps } from '@/app';
 
-import { Example } from './Example';
+import { ExampleCard } from '../components/exampleCard/ExampleCard';
+import { ExampleContainer } from '../components/exampleContainer/ExampleContainer';
 
 interface Props extends RootStackScreenProps<RootStackScreen.EXAMPLE_2> {}
 
@@ -12,5 +13,9 @@ export const Example2Screen: FC<Props> = ({ navigation }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return <Example text='Go To Example 1' onPress={handleOnPress} />;
+  return (
+    <ExampleContainer>
+      <ExampleCard text='Go To Example 1' onPress={handleOnPress} />
+    </ExampleContainer>
+  );
 };

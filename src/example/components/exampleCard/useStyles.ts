@@ -1,13 +1,6 @@
 import { createStylesHook } from '@/theme';
 
 export const useStyles = createStylesHook(({ theme, globalStyles }) => ({
-  container: {
-    ...globalStyles.paddingHorizontal,
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: theme.colors.background.primary,
-  },
   card: {
     ...globalStyles.card,
     width: '100%',

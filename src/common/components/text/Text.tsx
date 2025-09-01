@@ -1,10 +1,11 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import { StyleProp, Text as RNText, TextStyle } from 'react-native';
+
+import { WithChildren } from '../../types';
 
 import { useStyles } from './useStyles';
 
-interface Props {
-  children: ReactNode;
+interface Props extends WithChildren {
   style?: StyleProp<TextStyle>;
 }
 

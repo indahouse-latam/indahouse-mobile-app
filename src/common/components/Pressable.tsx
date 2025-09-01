@@ -1,4 +1,4 @@
-import { FC, ReactNode, useCallback } from 'react';
+import { FC, useCallback } from 'react';
 import {
   Pressable as RNPressable,
   PressableStateCallbackType,
@@ -6,8 +6,9 @@ import {
   ViewStyle,
 } from 'react-native';
 
-interface Props {
-  children: ReactNode;
+import { WithChildren } from '../types';
+
+interface Props extends WithChildren {
   style?: StyleProp<ViewStyle>;
   onPress?: () => void;
 }

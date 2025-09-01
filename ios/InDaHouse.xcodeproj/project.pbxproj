@@ -10,6 +10,7 @@
 		0C80B921A6F3F58F76C31292 /* libPods-InDaHouse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-InDaHouse.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3C1880168246419581E2E6D7 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F948DD42A354C50B7D5B3D5 /* Montserrat-Regular.ttf */; };
+		43581EB32EC1442E836A0F7A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740B90F80F924D2EA76A89D6 /* Colors.xcassets */; };
 		443242424F09477DB9C78F47 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16E082748F2F4738BB517FA7 /* Montserrat-Bold.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -17,7 +18,6 @@
 		D96C13A2359702BE85903B1C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		E2B3DA86934F4599A93A059C /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C1135D934F7386B037B6 /* Montserrat-SemiBold.ttf */; };
 		FECE4FEB129E4B9081FA1FE5 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4836D26CD0D64837ADF28158 /* BootSplash.storyboard */; };
-		43581EB32EC1442E836A0F7A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740B90F80F924D2EA76A89D6 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,14 +29,14 @@
 		16E082748F2F4738BB517FA7 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../src/common/assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		2F948DD42A354C50B7D5B3D5 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../src/common/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-InDaHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InDaHouse.debug.xcconfig"; path = "Target Support Files/Pods-InDaHouse/Pods-InDaHouse.debug.xcconfig"; sourceTree = "<group>"; };
+		4836D26CD0D64837ADF28158 /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = InDaHouse/BootSplash.storyboard; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-InDaHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InDaHouse.release.xcconfig"; path = "Target Support Files/Pods-InDaHouse/Pods-InDaHouse.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-InDaHouse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InDaHouse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		740B90F80F924D2EA76A89D6 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = InDaHouse/Colors.xcassets; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = InDaHouse/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = InDaHouse/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		869A8FEFDC314D4B9A6915F5 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../src/common/assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		4836D26CD0D64837ADF28158 /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "InDaHouse/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		740B90F80F924D2EA76A89D6 /* Colors.xcassets */ = {isa = PBXFileReference; name = "Colors.xcassets"; path = "InDaHouse/Colors.xcassets"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = folder.assetcatalog; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,13 +223,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-InDaHouse/Pods-InDaHouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-InDaHouse/Pods-InDaHouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -266,13 +262,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-InDaHouse/Pods-InDaHouse-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-InDaHouse/Pods-InDaHouse-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
