@@ -11,18 +11,27 @@ import { WithChildren } from '../types';
 interface Props extends WithChildren {
   style?: StyleProp<ViewStyle>;
   onPress?: () => void;
+  isDisabled?: boolean;
 }
 
-export const Pressable: FC<Props> = ({ children, style, onPress }) => {
+export const Pressable: FC<Props> = ({ children, style, onPress, isDisabled }) => {
   const pressableStyle = useCallback(
     (state: PressableStateCallbackType) => {
-      return state.pressed ? [style, { opacity: 0.7 }] : style;
+      const styles = [style];
+
+      if (isDisabled) {
+        styles.push({ opacity: 0.65 });
+      } else if (state.pressed) {
+        styles.push({ opacity: 0.75 });
+      }
+
+      return styles;
     },
-    [style],
+    [style, isDisabled],
   );
 
   return (
-    <RNPressable style={pressableStyle} onPress={onPress}>
+    <RNPressable style={pressableStyle} onPress={onPress} disabled={isDisabled}>
       {children}
     </RNPressable>
   );

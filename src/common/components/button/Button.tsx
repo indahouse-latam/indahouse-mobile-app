@@ -1,5 +1,7 @@
 import { ComponentProps, ElementType, JSX, memo, useMemo } from 'react';
-import { StyleProp, TextStyle, ViewStyle } from 'react-native';
+import { ActivityIndicator, StyleProp, TextStyle, ViewStyle } from 'react-native';
+
+import { Color } from '@/theme';
 
 import { Pressable } from '../Pressable';
 import { Text } from '../text/Text';
@@ -11,6 +13,8 @@ interface Props<T extends ElementType> {
   label: string;
   variant?: ButtonVariant;
   onPress?: () => void;
+  isLoading?: boolean;
+  isDisabled?: boolean;
   containerStyle?: StyleProp<ViewStyle>;
   leftIconComponent?: T;
   leftIconProps?: ComponentProps<T>;
@@ -20,6 +24,8 @@ export const Button = memo(
   <T extends ElementType>({
     label,
     onPress,
+    isLoading,
+    isDisabled,
     variant = ButtonVariant.CONTAINED,
     containerStyle,
     leftIconComponent: LeftIconComponent,
@@ -31,22 +37,42 @@ export const Button = memo(
       const containerStyles: StyleProp<ViewStyle> = [styles.container, containerStyle];
       const textStyles: StyleProp<TextStyle> = [styles.text];
 
+      let loaderColor: Color;
+
       if (variant === ButtonVariant.OUTLINED) {
         containerStyles.push(styles.outlinedContainer);
         textStyles.push(styles.outlinedText);
+
+        loaderColor = styles.outlinedText.color;
       } else {
         containerStyles.push(styles.containedContainer);
         textStyles.push(styles.containedText);
+
+        loaderColor = styles.containedText.color;
       }
 
-      return { container: containerStyles, text: textStyles };
+      return {
+        container: containerStyles,
+        text: textStyles,
+        loaderColor: loaderColor,
+      };
     }, [styles, variant, containerStyle]);
 
     return (
-      <Pressable style={processedStyles.container} onPress={onPress}>
-        {LeftIconComponent && <LeftIconComponent {...(leftIconProps as ComponentProps<T>)} />}
+      <Pressable
+        style={processedStyles.container}
+        onPress={onPress}
+        isDisabled={isLoading || isDisabled}
+      >
+        {isLoading ? (
+          <ActivityIndicator color={processedStyles.loaderColor} />
+        ) : (
+          <>
+            {LeftIconComponent && <LeftIconComponent {...(leftIconProps as ComponentProps<T>)} />}
 
-        <Text style={processedStyles.text}>{label}</Text>
+            <Text style={processedStyles.text}>{label}</Text>
+          </>
+        )}
       </Pressable>
     );
   },

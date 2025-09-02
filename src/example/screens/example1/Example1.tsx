@@ -28,6 +28,7 @@ export const Example1Screen: FC<Props> = ({ navigation }) => {
         leftIconComponent={Icon.GoogleOutlined}
         containerStyle={styles.buttonContainer}
         onPress={handleOnPress}
+        isLoading
       />
     </ExampleContainer>
   );
