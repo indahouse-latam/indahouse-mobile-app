@@ -3,6 +3,8 @@ export * from './components/button/Button';
 export * from './components/button/types';
 export * from './components/Pressable';
 export * from './components/text/Text';
+export * from './components/textInput/TextInput';
+export * from './components/textInput/types';
 export * from './constants/device';
 export * from './types';
 export * from './utils/hideSplashScreen';
