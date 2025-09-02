@@ -8,15 +8,20 @@ export const useStyles = createStylesHook(({ theme }) => ({
     justifyContent: 'center',
     alignItems: 'center',
     columnGap: theme.space.width(4),
-    paddingVertical: theme.space.height(2),
+    height: theme.space.height(7),
     borderWidth: 3,
     borderColor: theme.colors.primary,
+    shadowColor: theme.colors.primary,
+    shadowOpacity: 0.2,
+    shadowOffset: { width: 0, height: 4 },
+    shadowRadius: 16.4,
+    elevation: 12,
   },
   containedContainer: {
     backgroundColor: theme.colors.primary,
   },
   outlinedContainer: {
-    backgroundColor: 'transparent',
+    backgroundColor: theme.colors.background.secondary,
   },
   text: {
     fontFamily: theme.fonts.primary.semibold,
