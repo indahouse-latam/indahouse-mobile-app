@@ -14,6 +14,7 @@ interface Props {
   value?: string;
   onChange?: (value: string) => void;
   label: string;
+  errorMessage?: string;
 }
 
 export const TextInput: FC<Props> = memo(
@@ -25,14 +26,17 @@ export const TextInput: FC<Props> = memo(
     value,
     onChange,
     label,
+    errorMessage,
   }) => {
     const { styles } = useStyles();
+
+    const inputStyle = errorMessage ? [styles.input, styles.inputError] : styles.input;
 
     return (
       <View style={[styles.container, containerStyle]}>
         <RNTextInput
           allowFontScaling={false}
-          style={styles.input}
+          style={inputStyle}
           inputMode={inputMode}
           autoCapitalize={autoCapitalize}
           autoCorrect={autoCorrect}
@@ -41,6 +45,8 @@ export const TextInput: FC<Props> = memo(
         />
 
         <Text style={styles.label}>{label}</Text>
+
+        {errorMessage && <Text style={styles.errorMessage}>{errorMessage}</Text>}
       </View>
     );
   },
