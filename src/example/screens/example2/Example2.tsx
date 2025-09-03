@@ -35,6 +35,7 @@ export const Example2Screen: FC<Props> = ({ navigation }) => {
         autoCapitalize={AutoCapitalize.NONE}
         value={email}
         onChange={handleInputChange}
+        errorMessage='El email es obligatorio'
       />
     </ExampleContainer>
   );
