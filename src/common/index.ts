@@ -1,4 +1,5 @@
 export * from './assets/icons';
+export * from './assets/images';
 export * from './components/button/Button';
 export * from './components/button/types';
 export * from './components/Pressable';
@@ -6,5 +7,9 @@ export * from './components/text/Text';
 export * from './components/textInput/TextInput';
 export * from './components/textInput/types';
 export * from './constants/device';
-export * from './types';
+export * from './types/json';
+export * from './types/props';
+export * from './utils/convertHexToRgba';
 export * from './utils/hideSplashScreen';
+export * from './utils/publicHttpClient';
+export * from './utils/sleep';
