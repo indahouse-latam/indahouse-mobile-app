@@ -3,21 +3,32 @@ import { FC } from 'react';
 import { StatusBar } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import { hideSplashScreen } from '@/common';
+import { useAuthenticationCheck } from '@/auth';
 import { ThemeProvider } from '@/theme';
+import { UserProvider } from '@/user';
 
 import { RootStackNavigation } from './rootStack/RootStack';
 
-export const App: FC = () => {
+const withProviders = <T extends object>(Component: FC<T>) => {
+  return (props: T) => (
+    <UserProvider>
+      <Component {...props} />
+    </UserProvider>
+  );
+};
+
+export const App: FC = withProviders(() => {
+  const authentication = useAuthenticationCheck();
+
   return (
     <SafeAreaProvider>
       <StatusBar translucent backgroundColor={'transparent'} barStyle='dark-content' />
 
       <ThemeProvider>
-        <NavigationContainer onReady={hideSplashScreen}>
-          <RootStackNavigation />
+        <NavigationContainer>
+          {authentication.isLoaded && <RootStackNavigation />}
         </NavigationContainer>
       </ThemeProvider>
     </SafeAreaProvider>
   );
-};
+});
