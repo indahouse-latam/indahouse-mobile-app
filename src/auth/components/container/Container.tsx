@@ -14,7 +14,7 @@ const gradientBaseProps = {
 } satisfies Partial<LinearGradientProps>;
 
 export const Container: FC<WithChildren> = ({ children }) => {
-  const { styles, theme } = useStyles();
+  const { styles, theme, globalStyles } = useStyles();
 
   const gradientColors = useMemo(
     (): LinearGradientProps['colors'] => [
@@ -27,7 +27,11 @@ export const Container: FC<WithChildren> = ({ children }) => {
 
   return (
     <ImageBackground style={styles.container} source={Image.AuthBackground} resizeMode='cover'>
-      <LinearGradient style={styles.gradient} colors={gradientColors} {...gradientBaseProps} />
+      <LinearGradient
+        style={globalStyles.absoluteFill}
+        colors={gradientColors}
+        {...gradientBaseProps}
+      />
 
       <View style={styles.contentContainer}>{children}</View>
     </ImageBackground>

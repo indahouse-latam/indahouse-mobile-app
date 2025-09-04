@@ -4,6 +4,9 @@ export const buildGlobalStyles = createStylesBuilder(theme => ({
   paddingHorizontal: {
     paddingHorizontal: theme.space.width(5),
   },
+  paddingBottom: {
+    paddingBottom: theme.space.height(3) + theme.space.insets.bottom,
+  },
   absoluteFill: {
     position: 'absolute',
     top: 0,
@@ -19,5 +22,10 @@ export const buildGlobalStyles = createStylesBuilder(theme => ({
     shadowOffset: { width: 0, height: 0 },
     shadowRadius: 10,
     elevation: 6,
+  },
+  title: {
+    fontFamily: theme.fonts.primary.bold,
+    fontSize: theme.sizes.text.large,
+    textAlign: 'center',
   },
 }));
