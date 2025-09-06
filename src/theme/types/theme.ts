@@ -16,6 +16,7 @@ interface Colors {
   primary: Color;
   secondary: Color;
   tertiary: Color;
+  quaternary: Color;
   background: BackgroundColors;
   shadow: Color;
   success: Color;

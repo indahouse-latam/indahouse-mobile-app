@@ -4,6 +4,8 @@ export const useStyles = createStylesHook(({ theme, globalStyles }) => ({
   container: {
     flex: 1,
     justifyContent: 'flex-end',
+  },
+  image: {
     height: theme.space.height(68),
   },
   contentContainer: {

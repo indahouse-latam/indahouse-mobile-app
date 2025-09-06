@@ -9,6 +9,7 @@ export const lightTheme: Theme = {
     primary: Color.BLUE,
     secondary: Color.DARK_BLUE,
     tertiary: Color.LIGHT_BLUE,
+    quaternary: Color.CYAN,
     background: {
       primary: Color.EXTRA_LIGHT_GRAY,
       secondary: Color.WHITE,

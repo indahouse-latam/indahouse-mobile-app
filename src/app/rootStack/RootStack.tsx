@@ -4,7 +4,7 @@ import {
 } from '@react-navigation/native-stack';
 import { FC, memo, useEffect } from 'react';
 
-import { HomeScreen } from '@/auth';
+import { HomeScreen, VerificationCodeScreen } from '@/auth';
 import { hideSplashScreen } from '@/common';
 import { Example1Screen, Example2Screen } from '@/example';
 import { useUserState } from '@/user';
@@ -33,7 +33,13 @@ export const RootStackNavigation: FC = memo(() => {
           <Stack.Screen name={RootStackScreen.EXAMPLE_2} component={Example2Screen} />
         </>
       ) : (
-        <Stack.Screen name={RootStackScreen.HOME} component={HomeScreen} />
+        <>
+          <Stack.Screen name={RootStackScreen.HOME} component={HomeScreen} />
+          <Stack.Screen
+            name={RootStackScreen.VERIFICATION_CODE}
+            component={VerificationCodeScreen}
+          />
+        </>
       )}
     </Stack.Navigator>
   );

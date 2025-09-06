@@ -23,9 +23,4 @@ export const buildGlobalStyles = createStylesBuilder(theme => ({
     shadowRadius: 10,
     elevation: 6,
   },
-  title: {
-    fontFamily: theme.fonts.primary.bold,
-    fontSize: theme.sizes.text.large,
-    textAlign: 'center',
-  },
 }));

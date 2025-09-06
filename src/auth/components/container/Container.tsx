@@ -26,7 +26,12 @@ export const Container: FC<WithChildren> = ({ children }) => {
   );
 
   return (
-    <ImageBackground style={styles.container} source={Image.AuthBackground} resizeMode='cover'>
+    <ImageBackground
+      style={styles.container}
+      imageStyle={styles.image}
+      source={Image.AuthBackground}
+      resizeMode='cover'
+    >
       <LinearGradient
         style={globalStyles.absoluteFill}
         colors={gradientColors}

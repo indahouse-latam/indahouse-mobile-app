@@ -6,6 +6,7 @@ export * from './components/Pressable';
 export * from './components/text/Text';
 export * from './components/textInput/TextInput';
 export * from './components/textInput/types';
+export * from './components/title/Title';
 export * from './constants/device';
 export * from './types/json';
 export * from './types/props';

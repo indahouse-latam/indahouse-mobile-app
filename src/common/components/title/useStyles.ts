@@ -1,7 +1,9 @@
 import { createStylesHook } from '@/theme';
 
 export const useStyles = createStylesHook(({ theme }) => ({
-  bottomContainer: {
-    rowGap: theme.space.height(2),
+  text: {
+    fontFamily: theme.fonts.primary.bold,
+    fontSize: theme.sizes.text.large,
+    textAlign: 'center',
   },
 }));
