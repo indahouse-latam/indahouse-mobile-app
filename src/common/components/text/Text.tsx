@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { StyleProp, Text as RNText, TextStyle } from 'react-native';
 
-import { WithChildren } from '../../types';
+import { WithChildren } from '../../types/props';
 
 import { useStyles } from './useStyles';
 

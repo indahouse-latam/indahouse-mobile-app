@@ -6,7 +6,7 @@ import {
   ViewStyle,
 } from 'react-native';
 
-import { WithChildren } from '../types';
+import { WithChildren } from '../types/props';
 
 interface Props extends WithChildren {
   style?: StyleProp<ViewStyle>;

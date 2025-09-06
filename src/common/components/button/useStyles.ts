@@ -9,8 +9,6 @@ export const useStyles = createStylesHook(({ theme }) => ({
     alignItems: 'center',
     columnGap: theme.space.width(4),
     height: theme.space.height(7),
-    borderWidth: 3,
-    borderColor: theme.colors.primary,
     shadowColor: theme.colors.primary,
     shadowOpacity: 0.2,
     shadowOffset: { width: 0, height: 4 },
@@ -21,11 +19,14 @@ export const useStyles = createStylesHook(({ theme }) => ({
     backgroundColor: theme.colors.primary,
   },
   outlinedContainer: {
+    borderWidth: 3,
+    borderColor: theme.colors.primary,
     backgroundColor: theme.colors.background.secondary,
   },
   text: {
     fontFamily: theme.fonts.primary.semibold,
     fontSize: theme.sizes.text.medium,
+    textTransform: 'uppercase',
   },
   containedText: {
     color: theme.colors.background.secondary,

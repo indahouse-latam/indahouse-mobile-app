@@ -16,6 +16,7 @@ interface Colors {
   primary: Color;
   secondary: Color;
   tertiary: Color;
+  quaternary: Color;
   background: BackgroundColors;
   shadow: Color;
   success: Color;
@@ -31,6 +32,7 @@ interface Sizes {
 interface Space {
   height: (percent: number) => number;
   width: (percent: number) => number;
+  insets: Insets;
 }
 
 interface PrimaryFont {
@@ -56,4 +58,11 @@ interface RadiusSizes {
   medium: number;
   large: number;
   full: number;
+}
+
+interface Insets {
+  top: number;
+  bottom: number;
+  left: number;
+  right: number;
 }

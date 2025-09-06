@@ -3,11 +3,9 @@ import Svg, { Path } from 'react-native-svg';
 
 import { useTheme } from '@/theme';
 
-interface Props {
-  size?: number;
-}
+import { IconProps } from '../../types/props';
 
-export const GoogleOutlined: FC<Props> = memo(({ size = 22 }) => {
+export const GoogleOutlined: FC<IconProps> = memo(({ size = 22 }) => {
   const { theme } = useTheme();
 
   return (
